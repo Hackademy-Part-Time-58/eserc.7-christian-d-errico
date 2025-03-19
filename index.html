@@ -5,7 +5,7 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="min-vh-200 bg-light">
     <div>
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
@@ -44,7 +44,7 @@
 
     <header>
         <div class="container">
-            <h1 class="text-center mt-5 bg-primary text-bg-primary rounded">Buongustaio Piemonte 1995</h1>
+            <h1 class="text-center mt-5 bg-primary text-bg-primary rounded-pill border-2 mx-auto w-50 p-1">Buongustaio Piemonte 1995</h1>
             <p class="text-center fs-3 mt-5">Dal 1995, selezioniamo con passione i migliori sapori del Piemonte, offrendo prodotti artigianali di alta qualità per veri intenditori.</p>
             <div class="d-flex justify-content-center align-items-center">
                 <a href="https://buongustaiopiemonte.com/artigiani-dal-1995/" target="_blank" class="btn btn-primary btn-lg">Scopri di più</a>
@@ -56,7 +56,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="card text-center">
                     <a href="https://ricette.giallozafferano.it/Vitello-tonnato.html" target="_blank">
                         <img src="./Vitello-tonnato.png" class="card-img-top" alt="Bagna Caoda">
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="card text-center">
                     <a href="https://ricette.giallozafferano.it/Brasato-al-Barolo.html" target="_blank">
                         <img src="./Brasato-al-Barolo.png" class="card-img-top" alt="Vitello Tonnato">
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="card text-center">
                     <a href="https://ricette.giallozafferano.it/Bagna-caoda.html" target="_blank">
                         <img src="./Bagna-caoda.png" class="card-img-top" alt="Brasato al Barolo">
@@ -103,5 +103,111 @@
 </div>
 </section>
 
+<section>
+    <div class="container my-5">
+        <h2 class="text-center mb-4 bg-primary text-bg-primary rounded-pill border-2 mx-auto w-50 p-1">Cosa dicono di noi</h2>
+        <div class="row mt-5">
+
+            <div class="col-sm-4">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <p class="card-text">"Un'esperienza culinaria straordinaria! I sapori autentici del Piemonte in ogni piatto. Torneremo sicuramente!"</p>
+                        <h5 class="card-title text-center">- Marco R.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <p class="card-text">"Servizio impeccabile e piatti deliziosi. Il tartufo era eccezionale! Consigliatissimo!"</p>
+                        <h5 class="card-title text-center">- Elena F.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card p-3">
+                    <div class="card-body">
+                        <p class="card-text">"Atmosfera accogliente e cucina tradizionale di altissima qualità. Uno dei migliori ristoranti della regione!"</p>
+                        <h5 class="card-title text-center">- Davide M.</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+  <!-- Navbar centrata -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-center w-100">
+        <img src="./logopiemonte-removebg-preview.png" alt="">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sezione Contatti -->
+  <div class="container mt-5">
+    <h2>Contattaci</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="messaggio" class="form-label">Messaggio</label>
+        <textarea class="form-control" id="messaggio" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
+  </div>
+
+  <!-- Sezione Prenotazione Tavolo -->
+  <div class="container mt-5">
+    <h2>Prenota il tuo Tavolo</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nomePrenotazione" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nomePrenotazione" required>
+      </div>
+      <div class="mb-3">
+        <label for="dataPrenotazione" class="form-label">Data e Ora</label>
+        <input type="datetime-local" class="form-control" id="dataPrenotazione" required>
+      </div>
+      <div class="mb-3">
+        <label for="numeroPersone" class="form-label">Numero di Persone</label>
+        <input type="number" class="form-control" id="numeroPersone" required>
+      </div>
+      <button type="submit" class="btn btn-success">Prenota</button>
+    </form>
+  </div>
+
+  <!-- Link Social Media -->
+  <div class="container mt-4 text-center">
+    <h5>Seguici sui social!</h5>
+    <a href="https://www.instagram.com/buongustaio_piemonte/" target="_blank" class="btn btn-outline-danger mx-2">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/BuongustaioPiemonte1995" target="_blank" class="btn btn-outline-primary mx-2">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+  </div>
+
+  <!-- Ritorno in cima (Home) -->
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-link text-decoration-none">Torna alla Home</a>
+  </div>
+
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
